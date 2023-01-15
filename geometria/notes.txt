@@ -1,0 +1,13 @@
+CROSS PRODUCT (VxW or V*W or ||V||||B||sinθ) = AREA OF THE PARALELOGRAM
+  if V is in the right of W, then VxW > 0
+  if V is in the left of W , then VxW < 0
+  
+  VxW = det(where a11 = xv, a21 = yv, a12=xW and a22=yW);
+  if they are MORE PERPENDICULAR => VxW is BIGGER
+  if they are in SIMILAR DIRECTION => VxW is smaller
+
+
+DOT PRODUCT (V·W or V%W or |||V|||W||cosθ) = (len of projected W)(len of v)
+  SAME DIRECTION => V%W>0
+  PERPENDICULAR => V%W=0
+  OPOSSING DIRECTIONS => V%W<0

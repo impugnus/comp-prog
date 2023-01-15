@@ -1,0 +1,62 @@
+Graph: A graph G is an ordered pair of a set V of vertices and a set E of edges
+  G = (V,E)
+
+Direct: (a,b) != (b,a) (a != b)
+Undirect: {a,b} = {b,a}
+
+Unweighted graph: A weighted graph with all edges having weight = 1 unit.
+
+Self-loop: a edge is called this if both points of a edge are the same.
+Multi-edge: more than one edge to the same vertice
+
+If there is no self-loops or multiedges, it's a simple graph.
+
+if |v| = n,
+then,
+  0 <= |E| <= n(n-1), if directed
+  0 <= |E| <= (n(n-1))/2, if undirected
+(assuming no self-loops or multidges)
+
+if |V| = 10 -> |E| = 90
+if |V| = 100 -> |E| = 9900
+
+Path/Walk: A sequence of vertices where each adjacent pair is connected by an edge.
+Simple path: A walk in wich no vertices (and thus no edges) are repeated.
+Trail: A walk in wich no edges are repeated
+Closed walk: starts and ends at the same vertex.
+Simple Cycle: A closed walk with no repetition other than start and end.
+Strongly connected graph: if there is a path from any vertex to any other vertex.
+Weakly connected: make some changes and it's now a strongly connected graph (i think).
+Acyclic Graph: a graph with no cycle.
+Directed Acyclic Graph = DAG
+
+Bipartite graph (aka Bigraph) is a special graph where you can divide the vertex set int 2 disjoint sets such that:
+  1. Each vertex belongs to exactly one of these 2 sets
+  2. Each edge connects vertices of 2 different sets
+
+Dense -> the number of edges are close to the max supported.
+Sparse -> too few edges
+
+
+Implementations:
+  - Edge list:
+      struct Edge {
+        char* startV;
+        char *endV;
+        int weight;
+      };
+
+  - Adjacency Matrix:
+      int edges[v][v];
+
+  - Adjacency List:
+      A list with the connections: {1,2,3}
+      It can be implemented with arrays, linked lists or binary trees.
+      int *A[8]; A[0] = new int[3]; A[1] = new int[3]; A[2] = new int[2];   
+      
+
+Applications (it can represent a lot of things):
+  Social Newtork
+  World Wide Web
+  Some problems
+

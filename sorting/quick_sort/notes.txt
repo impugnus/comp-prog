@@ -1,0 +1,10 @@
+1) Divide and conquer
+2) Recursive
+3) Not stable
+4) Time complexity
+  O(n log n) -> best or avg case
+  O(n^2) -> worst case
+5) Space complexity
+  O(log n) -> avg case
+  O(n) -> worst case
+6) In-place

@@ -1,0 +1,7 @@
+1) Divide and conquer
+2) Recursive
+3) Stable (se repetir alguma coisa ou parte, o que vem primeiro fica primeiro na ordem final)
+4) Not in-place (in-place eh utilizar memoria extra constante)
+
+O(n) Space complexity
+O(n log n) time-complexity

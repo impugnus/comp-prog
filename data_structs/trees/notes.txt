@@ -1,0 +1,54 @@
+Edge = link
+
+Depth of x = number of edges in path from root to x
+
+Height of x = number of edges in the longest path from x to a leaf
+
+Height of the tree = height from root to the last leaf.
+
+Height of an empty tree: -1
+Height of a tree with 1 node: 0
+
+Binary tree: must have a max of two children.
+Strict binary tree: each node can have either 2 or 0 children.
+Complete binary tree: All levels except the last are completely filled and all nodes are as left as possible.
+Perfect binary tree: All levels are completely filled.
+
+Max number of nodes at level i = 2^i
+Max number of nodes in a binary tree with height h: 2^0 + 2^1 + ... + 2^h
+  = 2^(h+1) - 1
+  = 2^(n. of levels) - 1
+
+Balanced Binary Tree: difference between height of left and right subtree for every node is not more than K (mostly 1).
+
+diff = |height left - height right|
+
+It's good to try to keep a binary tree balanced (as close to perfect as possible), because the algorithm runs better when it's like this.
+
+
+Tree Traversal: Process each node only once (basically)
+  - Breadth-first: level order
+  - Depth-first:
+      DLR - LDR - LRD
+      <root><left><right> - Preorder
+      <left><root><right> - Inorder - gives a sorted list
+      <left><right><root> - Postorder
+
+
+(Node implementation in C - only for binary trees)    
+struct Node {
+  int data;
+  Node* left;
+  Node* right;
+}
+
+
+Applications:
+  - Storing naturally hierarchical data
+  - Organize data for quick search, insertion, deletion, etc...
+  - Trie -> dictionary
+  - Netowrk routing algorithm
+
+   O <- root
+  O O
+O O O O <- leaf
